@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "498055873516",
+    "project_id": "latihan-22312078",
+    "storage_bucket": "latihan-22312078.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:498055873516:android:c4d17abbc92ea9e97b36c9",
+        "android_client_info": {
+          "package_name": "com.example.myapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfrpIzcEZVd0H86rVGEL_IqHmZwJMG-kM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:498055873516:android:7268705044c66d8a7b36c9",
+        "android_client_info": {
+          "package_name": "com.tri"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfrpIzcEZVd0H86rVGEL_IqHmZwJMG-kM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:498055873516:android:1de955f8f5b10aab7b36c9",
+        "android_client_info": {
+          "package_name": "com.tri.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfrpIzcEZVd0H86rVGEL_IqHmZwJMG-kM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
