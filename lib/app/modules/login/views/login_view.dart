@@ -48,7 +48,7 @@ class LoginView extends GetView<LoginController> {
               },
               child: Text("Login"),
               style: ElevatedButton.styleFrom(
-                backgroundColor: Color.fromARGB(255, 33, 98, 226),
+                backgroundColor: Color.fromARGB(255, 0, 159, 22),
                 foregroundColor: Colors.white,
               ),
             ),
