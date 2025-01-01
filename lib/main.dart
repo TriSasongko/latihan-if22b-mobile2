@@ -7,18 +7,19 @@ import 'package:myapp/app/controllers/auth_controller.dart';
 
 import 'app/routes/app_pages.dart'; // Import the generated file
 import 'firebase_options.dart';
+import 'package:myapp/app/modules/karyawan/controllers/karyawan_controller.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
+  Get.put(KaryawanController(), permanent: true);
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
   final CAuth = Get.put(AuthController(), permanent: true);
-  
 
   @override
   Widget build(BuildContext context) {
