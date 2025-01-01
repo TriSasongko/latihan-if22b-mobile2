@@ -2,18 +2,14 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:myapp/app/controllers/auth_controller.dart';
-import 'package:myapp/app/modules/dosen/views/dosen_add_view.dart';
 import 'package:myapp/app/modules/dosen/views/dosen_view.dart';
-import 'package:myapp/app/modules/mahasiswa/views/mahasiswa_add_view.dart';
+import 'package:myapp/app/modules/karyawan/views/karyawan_view.dart';
 import 'package:myapp/app/modules/mahasiswa/views/mahasiswa_view.dart';
-import 'package:myapp/app/modules/pegawai/views/pegawai_add_view.dart';
-import 'package:myapp/app/modules/pegawai/views/pegawai_view.dart';
 
 import '../controllers/home_controller.dart';
 
 class HomeView extends GetView<HomeController> {
   final cAuth = Get.find<AuthController>();
-
   @override
   Widget build(BuildContext context) {
     return DashboardAdmin();
@@ -31,26 +27,10 @@ class _DashboardAdminState extends State<DashboardAdmin> {
   final cAuth = Get.find<AuthController>();
   int _index = 0;
   List<Map> _fragment = [
-    {
-      'title': 'Dashboard',
-      'view': MahasiswaView(),
-      'add': () => MahasiswaView(),
-    },
-    {
-      'title': 'Data Mahasiswa',
-      'view': MahasiswaView(),
-      'add': () => MahasiswaAddView(),
-    },
-    {
-      'title': 'Data Dosen',
-      'view': DosenView(),
-      'add': () => DosenAddView(),
-    },
-    {
-      'title': 'Data Pegawai',
-      'view': PegawaiView(),
-      'add': () => PegawaiAddView(),
-    },
+    {'title': 'Dashboard', 'view': MahasiswaView()},
+    {'title': 'Data Mahasiswa', 'view': MahasiswaView()},
+    {'title': 'Data Dosen', 'view': DosenView()},
+    {'title': 'Karyawan 22312078', 'view': KaryawanView()},
   ];
 
   @override
@@ -61,12 +41,6 @@ class _DashboardAdminState extends State<DashboardAdmin> {
         backgroundColor: Colors.teal,
         titleSpacing: 0,
         title: Text(_fragment[_index]['title']),
-        actions: [
-          IconButton(
-            onPressed: () => Get.to(_fragment[_index]['add']),
-            icon: Icon(Icons.add_circle_outline),
-          )
-        ],
       ),
       body: _fragment[_index]['view'],
     );
@@ -148,7 +122,7 @@ class _DashboardAdminState extends State<DashboardAdmin> {
               Get.back();
             },
             leading: Icon(Icons.people),
-            title: Text('Data Pegawai'),
+            title: Text('Data Karyawan'),
             trailing: Icon(Icons.navigate_next),
             iconColor: Colors.teal,
             textColor: Colors.teal,
@@ -161,8 +135,8 @@ class _DashboardAdminState extends State<DashboardAdmin> {
             leading: Icon(Icons.logout),
             title: Text('Logout'),
             trailing: Icon(Icons.navigate_next),
-            iconColor: Colors.red,
-            textColor: Colors.red,
+            iconColor: Colors.teal,
+            textColor: Colors.teal,
           ),
         ],
       ),

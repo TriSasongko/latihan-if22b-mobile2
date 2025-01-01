@@ -18,6 +18,7 @@ void main() async {
 
 class MyApp extends StatelessWidget {
   final CAuth = Get.put(AuthController(), permanent: true);
+  
 
   @override
   Widget build(BuildContext context) {

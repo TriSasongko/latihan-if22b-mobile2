@@ -79,6 +79,36 @@ class LoginView extends GetView<LoginController> {
                 ),
               ],
             ),
+            // Social Media Icons Row
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                IconButton(
+                  icon: Icon(Icons.facebook),
+                  color: Color(0xFF4267B2),
+                  iconSize: 35,
+                  onPressed: () {
+                    // Fungsi login Facebook
+                  },
+                ),
+                const SizedBox(width: 20),
+                IconButton(
+                  icon: Icon(Icons.g_mobiledata),
+                  color: Color(0xFFDB4437),
+                  iconSize: 35,
+                  onPressed: () => cAuth.LoginGoogle(),
+                ),
+                const SizedBox(width: 20),
+                IconButton(
+                  icon: Icon(Icons.alternate_email),
+                  color: Color(0xFF1DA1F2),
+                  iconSize: 35,
+                  onPressed: () {
+                    // Fungsi login Twitter
+                  },
+                ),
+              ],
+            ),
           ],
         ),
       ),
